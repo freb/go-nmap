@@ -51,7 +51,7 @@ type NmapRun struct {
 	Version          string         `xml:"version,attr" json:"version"`
 	ProfileName      string         `xml:"profile_name,attr" json:"profile_name"`
 	XMLOutputVersion string         `xml:"xmloutputversion,attr" json:"xmloutputversion"`
-	ScanInfo         ScanInfo       `xml:"scaninfo" json:"scaninfo"`
+	ScanInfo         []ScanInfo     `xml:"scaninfo" json:"scaninfo"`
 	Verbose          Verbose        `xml:"verbose" json:"verbose"`
 	Debugging        Debugging      `xml:"debugging" json:"debugging"`
 	TaskBegin        []Task         `xml:"taskbegin" json:"taskbegin"`
